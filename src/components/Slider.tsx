@@ -24,7 +24,7 @@ const Slider = () => {
 
   const [currentSlide, setCurrentSlide] = useState(0)
 
-  /* useEffect(() => {
+  useEffect(() => {
     const interval = setInterval(
       () =>
         setCurrentSlide((prev) => (prev === data.length - 1 ? 0 : prev + 1)) , 
@@ -32,7 +32,7 @@ const Slider = () => {
     );
     return () => clearInterval(interval);
   }, []);
-  */
+  
 
   return (
     <div className='flex flex-col h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] lg:flex-row bg-fuchsia-100 '>
